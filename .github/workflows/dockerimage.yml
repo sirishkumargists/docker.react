@@ -13,4 +13,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag sirishkumar/client
     - name: Run tests
-      run: docker run sirishkumar/client
+      run: docker-compose up
